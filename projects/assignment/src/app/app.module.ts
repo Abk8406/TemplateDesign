@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { SlideshowOneComponent } from './slideshow-one/slideshow-one.component';
 import { SlideshowTwoComponent } from './slideshow-two/slideshow-two.component';
 import { SlideshowThreeComponent } from './slideshow-three/slideshow-three.component';
+import { ChildComponent } from './child/child.component';
+import { ParentHeaderComponent } from './parent-header/parent-header.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,10 @@ import { SlideshowThreeComponent } from './slideshow-three/slideshow-three.compo
     AppComponent,
      SlideshowOneComponent,
      SlideshowTwoComponent,
-     SlideshowThreeComponent
+     SlideshowThreeComponent,
+     ChildComponent,
+     ParentHeaderComponent,
+     HomeComponent
 
   ],
   imports: [
@@ -21,6 +27,6 @@ import { SlideshowThreeComponent } from './slideshow-three/slideshow-three.compo
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [HomeComponent]
 })
 export class AppModule { }
