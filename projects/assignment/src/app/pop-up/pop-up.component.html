@@ -1,0 +1,38 @@
+<div class="position-fixed top-50 start-50 translate-middle bg-light text-dark p-3">
+  <div style="width: 400px;" class="shadow-lg">
+    <h2 class="p-3 text-center" mat-dialog-title>Person Details</h2>
+    <hr>
+    <div mat-dialog-content>
+      <mat-card>
+        <mat-card-title>
+          <h2>{{data.category|titlecase}}</h2>
+        </mat-card-title>
+
+        <mat-card-actions>
+          <div>
+            <dl>
+              <div class="d-flex justify-content-around">
+                <div>
+                  <dt>Price</dt>
+                  <dd> <span>&dollar;</span>{{data.price}}</dd>
+                </div>
+                <div>
+                  <dt>Rating | Count</dt>
+                  <dd>
+                    <span class="bi bi-star-fill text-warning"></span> {{data.rating.rate}}
+                    [{{data.rating.count}}]
+                  </dd>
+                </div>
+              </div>
+            </dl>
+          </div>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <hr>
+    <div mat-dialog-actions class="p-3">
+      <button class="btn btn-primary" mat-raised-button color="warn" mat-dialog-close cdkFocusInitial>Ok</button>
+      <button class="btn btn-danger" mat-stroked-button color="warn" mat-dialog-close>No Thanks</button>
+    </div>
+  </div>
+</div>
